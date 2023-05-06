@@ -1,4 +1,5 @@
 {
+    "UrlBase": "http://localhost:2369/ghost",
     "username": "TestingUser@gmail.com",
     "password": "Miso_2023#"
   }
