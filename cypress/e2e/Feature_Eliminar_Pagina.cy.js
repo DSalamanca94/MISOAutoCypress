@@ -29,7 +29,7 @@ describe('Eliminar una página de la aplicación Ghost', () => {
       .wait(1000)
       .get(properties.buttons["back to pages"]).click()
       .wait(1000)
-      .get(properties.buttons["edit page"]).click()
+      .get(properties.buttons["edit page"]).first().click()
       .wait(500)
       .get(properties.buttons["page settings"]).click()
       .wait(500)
