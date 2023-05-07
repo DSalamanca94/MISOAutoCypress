@@ -1,4 +1,5 @@
 {
-    "username": "TestingUser@gmail.com",
-    "password": "Miso_2023#"
+    "UrlBase": "http://localhost:2368/ghost/",
+    "username": "s.mascareno@uniandes.edu.co",
+    "password": "MISO123456789@"
   }
