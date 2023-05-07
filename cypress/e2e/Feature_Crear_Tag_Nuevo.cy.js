@@ -8,7 +8,7 @@ describe('Crear un Tag nuevo', () => {
   });
 
   it('Como usuario administrador inicio sesion en Ghost y creo un elemento Tag', () => {
-    cy.visit('http://localhost:2369/ghost/#/signin')
+    cy.visit(variables.UrlBase + '/#/signin')
       .get('#identification')
       .type(variables.username)
       .get('#password')

@@ -8,7 +8,7 @@ before(() => {
 });
  
   it('Como usuario administrador inicio sesion en Ghost, busco el primer elemento de la lista Tag y lo edito', () => {
-    cy.visit('http://localhost:2369/ghost/#/signin');
+    cy.visit(variables.UrlBase + '/#/signin');
     cy.wait(5000);
     cy.get('#identification').type(variables.username);
     cy.wait(2000);
