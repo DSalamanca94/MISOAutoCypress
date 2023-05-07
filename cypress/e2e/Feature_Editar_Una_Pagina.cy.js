@@ -30,7 +30,7 @@ describe('Login and create a new page', () => {
       .get(properties.buttons["back to pages"]).click()
       .wait(1000)
       // Edit page
-      .get(properties.buttons["edit page"]).click()
+      .get(properties.buttons["edit page"]).first().click()
       .wait(500)
       .get(properties.buttons["unpublish page"]).click()
       .wait(500)
@@ -50,8 +50,12 @@ describe('Login and create a new page', () => {
       .wait(500)
 
     // Verify new page exists
-      .get('ol.pages-list > li > a > h3:contains("Edit Page Test - Edited")')
-      .should('be.visible')
+    .get('h3.gh-content-entry-title')
+    .first()
+    .invoke('text')
+    .then((text) => {
+      assert.strictEqual(text.trim(), 'Edit Page Test - Edited');
+    });
       
   });
 });
