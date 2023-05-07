@@ -13,7 +13,7 @@ describe('Gestión Post', () => {
   
       it('Hacer Login, Crear un post, publicarlo y consultar los filtros del Post Publish, y buscar el Post Publicado', () => {
         
-        cy.visit(variables.UrlBase + '/ghost');
+        cy.visit(variables.UrlBase);
         cy.wait(5000);
         cy.get('#identification').type(variables.username);
         cy.get('#password').type(variables.password);

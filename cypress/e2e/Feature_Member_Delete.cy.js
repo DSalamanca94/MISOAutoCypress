@@ -12,7 +12,7 @@ describe('Gestión Post', () => {
       });
   
       it('Hacer Login, crear un miembro, eliminar un miembro y validar que el miembro ha sido eliminado', () => {
-        cy.visit(variables.UrlBase + '/ghost');
+        cy.visit(variables.UrlBase);
         cy.wait(5000);
         cy.get('#identification').type(variables.username);
         cy.get('#password').type(variables.password);
