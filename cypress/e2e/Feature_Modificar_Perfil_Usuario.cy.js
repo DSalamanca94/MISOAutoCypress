@@ -16,7 +16,7 @@ describe('Modificar Perfil de Usuario', () => {
         cy.wait(2000);
         cy.get('[data-test-button="sign-in"]').click();
         cy.wait(2000);
-        cy.get('#ember34').click();
+        cy.get('[class="gh-user-avatar relative"]').click();
         cy.wait(2000);
         cy.get('[data-test-nav="user-profile"]').click();
         cy.wait(2000);
