@@ -18,13 +18,13 @@ describe('Modificar Perfil de Usuario', () => {
         cy.wait(2000);
         cy.get('#ember34').click();
         cy.wait(2000);
-        cy.get('a[href*="#/settings/staff/test/"]').click();
+        cy.get('[data-test-nav="user-profile"]').click();
         cy.wait(2000);
-        cy.get('#user-password-old').clear().type(variables.password);
+        cy.get('#user-password-old').clear().type('Test123456');
         cy.wait(2000);
-        cy.get('#user-password-new').clear().type('Test123456');
+        cy.get('#user-password-new').clear().type('SanMateo#24');
         cy.wait(2000);
-        cy.get('#user-new-password-verification').clear().type('Test123456');
+        cy.get('#user-new-password-verification').clear().type('SanMateo#24');
         cy.wait(2000);
         cy.get('[data-test-save-pw-button]').click();
         cy.wait(2000);

@@ -18,7 +18,7 @@ describe('Modificar Perfil de Usuario', () => {
         cy.wait(2000);
         cy.get('#ember34').click();
         cy.wait(2000);
-        cy.get('a[href*="#/settings/staff/test/"]').click();
+        cy.get('[data-test-nav="user-profile"]').click();
         cy.wait(2000);
         cy.get('[data-tooltip="Regenerate"]').click();
         cy.wait(2000);
