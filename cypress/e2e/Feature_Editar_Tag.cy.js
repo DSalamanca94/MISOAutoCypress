@@ -30,5 +30,8 @@ before(() => {
     cy.wait(2000);
     cy.get('.gh-btn.gh-btn-primary.gh-btn-icon.ember-view').click();
     cy.wait(5000);
+    cy.get('[data-test-link="tags-back"]').click();
+    cy.wait(5000);
+    cy.get('h3.gh-tag-list-name').contains('New Tag Example Test').should('be.visible');
   });
 });
