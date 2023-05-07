@@ -29,7 +29,8 @@ describe('Crear una nueva página en la aplicación Ghost', () => {
       .wait(1000)
       .get(properties.buttons["back to pages"]).click()
       .wait(1000)
-      .get(`ol.pages-list > li > a > h3:contains('New Page')`)
+      .get('a.gh-post-list-title h3')
+      .contains('New Page Test')
       .should('be.visible');
   });
 });
